@@ -1,0 +1,393 @@
+[
+  {
+    "type": "plugin:dsh-super-research/event",
+    "seq": 0,
+    "time": 1234567890000,
+    "ignorable": true,
+    "data": {
+      "version": 1,
+      "requestId": "old0",
+      "expectedRevision": 0,
+      "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+      "command": {
+        "action": "propose",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        }
+      },
+      "state": {
+        "version": 1,
+        "revision": 1,
+        "status": "proposed",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        },
+        "proposalSeq": 0,
+        "reportSeq": -1,
+        "proposalRevision": 1,
+        "authorizationSeq": -1,
+        "controlSeq": -1,
+        "statusNote": "",
+        "evidence": [],
+        "nodes": [],
+        "experiments": [],
+        "operations": [],
+        "report": false,
+        "review": false,
+        "requests": [
+          {
+            "id": "old0",
+            "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+            "revision": 1
+          }
+        ],
+        "error": ""
+      }
+    }
+  },
+  {
+    "type": "plugin:dsh-super-research/event",
+    "seq": 1,
+    "time": 1234567890001,
+    "ignorable": true,
+    "data": {
+      "version": 1,
+      "requestId": "old1",
+      "expectedRevision": 1,
+      "digest": "c94b085cf627d9f9c7a1f2639dc32f43d0751081a18cd3e59a7db5fde337a9af",
+      "command": {
+        "action": "confirm",
+        "user": {
+          "seq": 1,
+          "quote": "确认方案"
+        }
+      },
+      "state": {
+        "version": 1,
+        "revision": 2,
+        "status": "running",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        },
+        "proposalSeq": 0,
+        "reportSeq": -1,
+        "proposalRevision": 1,
+        "authorizationSeq": 1,
+        "controlSeq": -1,
+        "statusNote": "",
+        "evidence": [],
+        "nodes": [],
+        "experiments": [],
+        "operations": [],
+        "report": false,
+        "review": false,
+        "requests": [
+          {
+            "id": "old0",
+            "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+            "revision": 1
+          },
+          {
+            "id": "old1",
+            "digest": "c94b085cf627d9f9c7a1f2639dc32f43d0751081a18cd3e59a7db5fde337a9af",
+            "revision": 2
+          }
+        ],
+        "error": ""
+      }
+    }
+  },
+  {
+    "type": "plugin:dsh-super-research/event",
+    "seq": 2,
+    "time": 1234567890002,
+    "ignorable": true,
+    "data": {
+      "version": 1,
+      "requestId": "old2",
+      "expectedRevision": 2,
+      "digest": "2b528a1ee76b0d737d64d8331d4d3e3f044c788ad44f07b2c187267da674d523",
+      "command": {
+        "action": "evidence",
+        "evidence": {
+          "id": "e1",
+          "kind": "supplied",
+          "claim": "claim",
+          "sourceSeq": 1,
+          "quote": "quote",
+          "ref": ""
+        }
+      },
+      "state": {
+        "version": 1,
+        "revision": 3,
+        "status": "running",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        },
+        "proposalSeq": 0,
+        "reportSeq": -1,
+        "proposalRevision": 1,
+        "authorizationSeq": 1,
+        "controlSeq": -1,
+        "statusNote": "",
+        "evidence": [
+          {
+            "id": "e1",
+            "kind": "supplied",
+            "claim": "claim",
+            "sourceSeq": 1,
+            "quote": "quote",
+            "ref": ""
+          }
+        ],
+        "nodes": [],
+        "experiments": [],
+        "operations": [],
+        "report": false,
+        "review": false,
+        "requests": [
+          {
+            "id": "old0",
+            "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+            "revision": 1
+          },
+          {
+            "id": "old1",
+            "digest": "c94b085cf627d9f9c7a1f2639dc32f43d0751081a18cd3e59a7db5fde337a9af",
+            "revision": 2
+          },
+          {
+            "id": "old2",
+            "digest": "2b528a1ee76b0d737d64d8331d4d3e3f044c788ad44f07b2c187267da674d523",
+            "revision": 3
+          }
+        ],
+        "error": ""
+      }
+    }
+  },
+  {
+    "type": "plugin:dsh-super-research/event",
+    "seq": 3,
+    "time": 1234567890003,
+    "ignorable": true,
+    "data": {
+      "version": 1,
+      "requestId": "old3",
+      "expectedRevision": 3,
+      "digest": "eb48ecd83d24dfa53e2d39fafc263f9c674a15284e2edafd630ea2fbc05d72d7",
+      "command": {
+        "action": "report",
+        "report": {
+          "text": "original report [e1]",
+          "evidenceIds": [
+            "e1"
+          ],
+          "limits": "limited"
+        }
+      },
+      "state": {
+        "version": 1,
+        "revision": 4,
+        "status": "report",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        },
+        "proposalSeq": 0,
+        "reportSeq": 3,
+        "proposalRevision": 1,
+        "authorizationSeq": 1,
+        "controlSeq": -1,
+        "statusNote": "",
+        "evidence": [
+          {
+            "id": "e1",
+            "kind": "supplied",
+            "claim": "claim",
+            "sourceSeq": 1,
+            "quote": "quote",
+            "ref": ""
+          }
+        ],
+        "nodes": [],
+        "experiments": [],
+        "operations": [],
+        "report": {
+          "text": "original report [e1]",
+          "evidenceIds": [
+            "e1"
+          ],
+          "limits": "limited"
+        },
+        "review": false,
+        "requests": [
+          {
+            "id": "old0",
+            "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+            "revision": 1
+          },
+          {
+            "id": "old1",
+            "digest": "c94b085cf627d9f9c7a1f2639dc32f43d0751081a18cd3e59a7db5fde337a9af",
+            "revision": 2
+          },
+          {
+            "id": "old2",
+            "digest": "2b528a1ee76b0d737d64d8331d4d3e3f044c788ad44f07b2c187267da674d523",
+            "revision": 3
+          },
+          {
+            "id": "old3",
+            "digest": "eb48ecd83d24dfa53e2d39fafc263f9c674a15284e2edafd630ea2fbc05d72d7",
+            "revision": 4
+          }
+        ],
+        "error": ""
+      }
+    }
+  },
+  {
+    "type": "plugin:dsh-super-research/event",
+    "seq": 4,
+    "time": 1234567890004,
+    "ignorable": true,
+    "data": {
+      "version": 1,
+      "requestId": "old4",
+      "expectedRevision": 4,
+      "digest": "eace6cd81bcc294281d80c407321b90e48a6a094b6c940d062d20320c6e2e023",
+      "command": {
+        "action": "review",
+        "decision": "revise",
+        "user": {
+          "seq": 9,
+          "quote": "修改报告"
+        }
+      },
+      "state": {
+        "version": 1,
+        "revision": 5,
+        "status": "stopped",
+        "proposal": {
+          "title": "排序策略比较",
+          "question": "哪种排序策略满足正确性和性能标准？",
+          "approach": "固定输入，比较基线，寻找反例。",
+          "criteria": [
+            "与参考实现结果一致",
+            "报告测量方法和限制"
+          ],
+          "mode": "algorithm",
+          "maxToolCalls": 6,
+          "protocol": ""
+        },
+        "proposalSeq": 0,
+        "reportSeq": 3,
+        "proposalRevision": 1,
+        "authorizationSeq": 1,
+        "controlSeq": 4,
+        "statusNote": "",
+        "evidence": [
+          {
+            "id": "e1",
+            "kind": "supplied",
+            "claim": "claim",
+            "sourceSeq": 1,
+            "quote": "quote",
+            "ref": ""
+          }
+        ],
+        "nodes": [],
+        "experiments": [],
+        "operations": [],
+        "report": {
+          "text": "original report [e1]",
+          "evidenceIds": [
+            "e1"
+          ],
+          "limits": "limited"
+        },
+        "review": {
+          "decision": "revise",
+          "user": {
+            "seq": 9,
+            "quote": "修改报告"
+          }
+        },
+        "requests": [
+          {
+            "id": "old0",
+            "digest": "c2a59c6dfd40bbceb45241941740d097c769a1757aa5ad16c9a8a6278267dc46",
+            "revision": 1
+          },
+          {
+            "id": "old1",
+            "digest": "c94b085cf627d9f9c7a1f2639dc32f43d0751081a18cd3e59a7db5fde337a9af",
+            "revision": 2
+          },
+          {
+            "id": "old2",
+            "digest": "2b528a1ee76b0d737d64d8331d4d3e3f044c788ad44f07b2c187267da674d523",
+            "revision": 3
+          },
+          {
+            "id": "old3",
+            "digest": "eb48ecd83d24dfa53e2d39fafc263f9c674a15284e2edafd630ea2fbc05d72d7",
+            "revision": 4
+          },
+          {
+            "id": "old4",
+            "digest": "eace6cd81bcc294281d80c407321b90e48a6a094b6c940d062d20320c6e2e023",
+            "revision": 5
+          }
+        ],
+        "error": ""
+      }
+    }
+  }
+]
